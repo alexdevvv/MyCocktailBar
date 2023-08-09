@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MyCocktailBar" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.MyCocktailBar" parent="Base.Theme.MyCocktailBar" />
+
+    <style name="MyFloatingActionButton" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="android:backgroundTint">@color/base_blue</item>
+        <item name="android:tint">@color/white</item>
+<!--        <item name="android:src">@drawable/baseline_add_24</item>-->
+<!--        <item name="android:scaleType">center</item>-->
+        <!-- Другие параметры и атрибуты, по вашему выбору -->
+    </style>
+</resources>
