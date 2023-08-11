@@ -25,6 +25,15 @@ class GeneralFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        initAddButton()
+    }
+
+    private fun initAddButton(){
+        binding.addCocktailBt.setOnClickListener {
+            requireActivity().supportFragmentManager.beginTransaction()
+                .replace(R.id.container, AddCocktailFragment())
+                .commit()
+        }
     }
 
     override fun onDestroyView() {

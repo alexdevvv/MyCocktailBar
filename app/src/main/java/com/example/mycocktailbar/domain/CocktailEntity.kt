@@ -9,5 +9,6 @@ data class CocktailEntity(
     val id: Int = 0,
     val title: String,
     val description: String = "",
+    val chips: String = "",
     val recipe: String = ""
 )

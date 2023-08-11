@@ -69,14 +69,14 @@
             app:layout_constraintTop_toBottomOf="@id/add_title_text">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/descInputLayout"
+                android:id="@+id/descEditText"
                 android:layout_width="match_parent"
                 android:layout_height="130dp" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/recipeExtInputLayout"
+            android:id="@+id/recipeInputLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="12dp"
@@ -91,7 +91,7 @@
             app:layout_constraintTop_toBottomOf="@id/chips_ll">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/recipeEditTextName"
+                android:id="@+id/recipeEditText"
                 android:layout_width="match_parent"
                 android:layout_height="130dp" />
 
@@ -144,7 +144,7 @@
             android:layout_marginStart="28dp"
             android:text="@string/optional_field"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/recipeExtInputLayout" />
+            app:layout_constraintTop_toBottomOf="@+id/recipeInputLayout" />
 
 
 
