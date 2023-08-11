@@ -7,19 +7,19 @@ import androidx.room.RoomDatabase
 import com.example.mycocktailbar.domain.CocktailEntity
 
 @Database(entities = [CocktailEntity::class], version = 1)
-abstract class CocktailDatabase: RoomDatabase() {
+abstract class AppDatabase: RoomDatabase() {
 
     abstract fun cocktailDao(): CocktailDao
 
     companion object {
         @Volatile
-        private var INSTANCE: CocktailDatabase? = null
+        private var INSTANCE: AppDatabase? = null
 
-        fun getInstance(context: Context): CocktailDatabase {
+        fun getInstance(context: Context): AppDatabase {
             return INSTANCE ?: synchronized(this) {
                 val instance = Room.databaseBuilder(
                     context.applicationContext,
-                    CocktailDatabase::class.java,
+                    AppDatabase::class.java,
                     "cocktail_database"
                 ).build()
                 INSTANCE = instance

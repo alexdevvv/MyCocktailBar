@@ -12,11 +12,11 @@ interface CocktailDao {
     @Insert
     suspend fun addCocktail(cocktailEntity: CocktailEntity)
 
-//    @Query("SELECT * FROM cocktail_table")
-//     fun getCocktailList(): LiveData<List<CocktailEntity>>
-//
-//    @Query("SELECT * FROM cocktail_table WHERE id = :cocktailId")
-//    suspend fun getCocktailById(cocktailId: Int): CocktailEntity
+    @Query("SELECT * FROM cocktail_table")
+     fun getCocktailList(): LiveData<List<CocktailEntity>>
+
+    @Query("SELECT * FROM cocktail_table WHERE id = :cocktailId")
+    suspend fun getCocktailById(cocktailId: Int): CocktailEntity
 
 
 

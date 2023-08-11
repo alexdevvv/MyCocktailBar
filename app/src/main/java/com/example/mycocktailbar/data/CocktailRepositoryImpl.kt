@@ -9,11 +9,11 @@ class CocktailRepositoryImpl(private val dao: CocktailDao): CocktailRepository {
         dao.addCocktail(cocktailEntity)
     }
 
-//    override suspend fun getCocktailById(cocktailId: Int): CocktailEntity =
-//        dao.getCocktailById(cocktailId)
+    override suspend fun getCocktailById(cocktailId: Int): CocktailEntity =
+        dao.getCocktailById(cocktailId)
 
 
-//    override fun getCocktailsList(): LiveData<List<CocktailEntity>> =
-//        dao.getCocktailList()
+    override fun getCocktailsList(): LiveData<List<CocktailEntity>> =
+        dao.getCocktailList()
 
 }

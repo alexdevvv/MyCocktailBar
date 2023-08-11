@@ -14,4 +14,27 @@
 <!--        <item name="android:scaleType">center</item>-->
         <!-- Другие параметры и атрибуты, по вашему выбору -->
     </style>
+
+    <style name="MySaveButtonStyle" parent="Widget.Material3.Button">
+        <item name="android:backgroundTint">@color/blue</item>
+        <item name="android:textColor">@android:color/white</item>
+        <!-- Другие настройки стиля кнопки -->
+    </style>
+
+    <style name="MyAddButtonStyle" parent="Widget.Material3.Button">
+        <item name="android:backgroundTint">@color/blue</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="srcCompat">@drawable/baseline_add_circle_24</item>
+        <item name="android:src">@drawable/baseline_add_circle_24</item>
+        <!-- Другие настройки стиля кнопки -->
+    </style>
+
+    <style name="MyCancelButtonStyle" parent="Widget.Material3.Button">
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="strokeColor">@color/blue</item>
+        <item name="strokeWidth">2dp</item>
+
+        <!-- Другие настройки стиля кнопки -->
+    </style>
 </resources>

@@ -5,10 +5,10 @@ import androidx.lifecycle.LiveData
 interface CocktailRepository {
 
     suspend fun addCocktail(cocktailEntity: CocktailEntity)
-//
-//    suspend fun getCocktailById(cocktailId: Int): CocktailEntity
-//
-//    fun getCocktailsList(): LiveData<List<CocktailEntity>>
+
+    suspend fun getCocktailById(cocktailId: Int): CocktailEntity
+
+    fun getCocktailsList(): LiveData<List<CocktailEntity>>
 
 
 }
